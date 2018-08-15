@@ -14,6 +14,10 @@ module Regaliator
       def utilities(params = {})
         request('/billers/utilities', params).get
       end
+      
+      def rpps_billers(params = {})
+        request('/rpps_billers', params).get
+      end
     end
   end
 end
