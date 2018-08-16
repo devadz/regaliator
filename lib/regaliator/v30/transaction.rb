@@ -6,6 +6,11 @@ module Regaliator
       def list(params = {})
         request('/transactions', params).get
       end
+
+      def show(id, params = {})
+        request("/transactions/#{id}", params).get
+      end
+
       # for xpay billers
       def create(params = {})
         request('/transactions', params).post
