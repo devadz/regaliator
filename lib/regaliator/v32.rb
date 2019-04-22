@@ -4,6 +4,7 @@ module Regaliator
   module V32
     API_VERSION = '3.2'.freeze
 
+    Address     = V30::Address
     Client      = V30::Client
     Account     = V30::Account
     Bill        = V30::Bill
