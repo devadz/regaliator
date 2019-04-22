@@ -4,6 +4,8 @@ require 'regaliator/v30/bill'
 require 'regaliator/v30/biller'
 require 'regaliator/v30/rate'
 require 'regaliator/v30/transaction'
+require 'regaliator/v30/address'
+
 
 module Regaliator
   module V30
@@ -26,6 +28,10 @@ module Regaliator
 
       def transaction
         Transaction.new(config)
+      end
+
+      def address
+        Address.new(config)
       end
     end
   end
