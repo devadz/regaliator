@@ -14,7 +14,7 @@ module Regaliator
 
       #This endpoint returns the addresses that have been created to be used as Sender or Receiver on your check transactions.
       def list(params = {})
-        request('/addresses', params).post
+        request('/addresses', params).get
       end
 
       def show(id, params = {})
